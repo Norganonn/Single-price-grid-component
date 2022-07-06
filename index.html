@@ -4,7 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | Single Price Grid Component</title>
 
@@ -15,36 +19,47 @@
   </style>
 </head>
 <body>
-  Join our community
 
-  30-day, hassle-free money back guarantee
+<!-- Container -->
+<div class="container">
 
-  Gain access to our full library of tutorials along with expert code reviews. 
-  Perfect for any developers who are serious about honing their skills.
-
-  Monthly Subscription
-
-  &dollar;29 per month
-
-  Full access for less than &dollar;1 a day
-
-  Sign Up
-
-  Why Us
-
-  Tutorials by industry experts
-  Peer &amp; expert code review
-  Coding exercises
-  Access to our GitHub repos
-  Community forum
-  Flashcard decks
-  New videos every week
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+      <div class="description">
+        <h1 class="description--title">Join our community</h1>
+        <p class="description__inner  description__inner--br-yellow">30-day, hassle-free money back guarantee</p>
+        <p class="description__text">
+          Gain access to our full library of tutorials along with expert code reviews. 
+        </p>
+        <p class="description__text">
+          Perfect for any developers who are serious about honing their skills.
+        </p>
+      </div>
+      
+  <!-- Info --> 
+    <div class="info">
+        <div class="subscription box">
+          <h2 class="title">Monthly Subscription</h2>
+          <div class="subscription__price">
+            <p class="subscription__money">&dollar;29</p>
+            <p class="subscription__info">per month</p>
+          </div>
+          <p class="subscription__more-info">Full access for less than &dollar;1 a day</p>
+          <a href="#" class="btn btn--green">Sign Up</a>
+        </div>
+        
+  <!-- Why Us -->
+        <div class="why-us box">
+          <h2 class="title">Why Us</h2>
+          <div class="why-us__links">
+            <a href="#" class="why-us__item">Tutorials by industry experts</a>
+            <a href="#" class="why-us__item">Peer &amp; expert code review</a>
+            <a href="#" class="why-us__item">Coding exercises</a>
+            <a href="#" class="why-us__item">Access to our GitHub repos</a>
+            <a href="#" class="why-us__item">Community forum</a>
+            <a href="#" class="why-us__item">Flashcard decks</a>
+            <a href="#" class="why-us__item">New videos every week</a>
+          </div>
+        </div>
+    </div> 
+</div> <!-- /.container -->
 </body>
 </html>
